@@ -10,6 +10,7 @@ const PORT      = 3000;
 app.use(express.static(BASE_PATH));
 
 
+//handles requests
 app.get('/', (req, res) =>
   res.sendFile(path.join(BASE_PATH, "./index.html"))
 );
